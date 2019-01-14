@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=SortMethods
+comment1.params=arr
+comment1.target=java.util.ArrayList\ My(java.util.ArrayList)
+comment2.params=y
+comment2.target=int[]\ Bubble(int[])
+comment3.params=arr
+comment3.target=int[]\ Selection(int[])
+comment4.params=arr
+comment4.target=int[]\ Insertion(int[])
+numComments=5
