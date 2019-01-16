@@ -2,7 +2,7 @@
 /**
  * Write a description of class Runner here.
  *
- * @author (your name)
+ * @author (yoBobby)
  * @version (a version number or a date)
  */
 import java.util.*;
@@ -13,17 +13,18 @@ public class Runner
     static ArrayList<Integer> arr = new ArrayList<Integer>(1);
     
     public static void MySort(){
-         ms.My(arr);
-        System.out.print("MySort: ");
-        for(int i=0; i<100; i++){
+        for(int i=0; i<10; i++){
             int n=0;
-            n=(int)(Math.random()*100);
+            n=(int)(Math.random()*10);
             arr.add(n);
+           System.out.println(n);
+          
         }
-        for(int i=0; i<sort.length; i++){
-            System.out.print(sort[i]);
+        ArrayList<Integer> sort = new ArrayList<Integer>(ms.My(arr)); 
+        System.out.print("MySort: ");
+        for(int i=0; i<sort.size(); i++){
+            System.out.println(sort.get(i));
         }
-        
     }
     public static void Bubble(){
         int[] sort = ms.Bubble(x);

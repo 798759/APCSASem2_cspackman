@@ -10,12 +10,12 @@ public class SortMethods
 {
     public ArrayList<Integer> My(ArrayList<Integer> arr )
     {
-        for(int i = arr.size(); i>0; i--){
-            for(int j=1; j<i; j++)    
+        for(int i = arr.size(); i>=0; i--){
+            for(int j=1; j<=i; j++)    
             if(arr.get(j-1)>arr.get(j)){
                     int temp = arr.get(j-1);
-                    arr.add(j-1,arr.get(j));
-                    arr.add(j,temp);
+                    arr.set(j-1,arr.get(j));
+                    arr.set(j,temp);
                 }
         }
         return  arr;
