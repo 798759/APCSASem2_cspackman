@@ -60,6 +60,10 @@ public class StudList{
     /**
      * separates the user input into three strings corresponding to first, middle, and last names
      * sets the first, middle, and last names for the given student
+     * 
+     * First Middle Last
+     * Last, First Middle
+     * Last, First
      */
     public void parseUserInput(String name, Student student){
         String fn = ""; String mn = ""; String ln = "";
