@@ -16,28 +16,37 @@ public class CanvasComponent extends JComponent implements MouseListener, MouseM
     private int mouseFromX;
     private int mouseFromY;
     private boolean shapeSelected;
+    private int mouseToX;
+    private int mouseToY;
+    private int colorR;
+    private int colorG;
+    private int colorB;
+    
     public CanvasComponent(int w, int h)
     {
-    width=w;
-    height=h;
-    setSize(width,height);   
-    xPos=150;
-    yPos=150;
-    
+        width=w;
+        height=h;
+        setSize(width,height);   
+        xPos=150;
+        yPos=150;
+        this.addMouseListener(this);
+        this.addMouseMotionListener(this);
+        colorR=(int)(Math.random()*189)+66;
+        colorG=(int)(Math.random()*155)+100;
+        colorB=(int)(Math.random()*55)+200;
+
     }
     public void paintComponent(Graphics g){
-        g.setColor(Color.green);
-        g.fillRect(width, height, xPos, yPos);
+        //colorR=(int)(Math.random()*189)+66;
+        //colorG=(int)(Math.random()*155)+100;
+        //colorB=(int)(Math.random()*55)+200;
+        System.out.println(colorR);
+        System.out.println(colorG);
+        System.out.println(colorB);
+        Color nc = new Color(colorR,colorG,colorB);
+        g.setColor(nc);
+        g.fillRect(xPos,yPos, width, height);
     }
-    // public boolean mousePressed(MouseEvent e){
-        // mouseFromX=e.getX();
-        // mouseFromY=e.getY();
-        // if(mouseFromX<xPos&&mouseFromY<mouseFromY){
-            // return shapeSelected=true;
-        // }else{
-            // return shapeSelected=false;
-        // }
-    
     public void mouseClicked(MouseEvent e){
     }
     /**
@@ -48,14 +57,12 @@ public class CanvasComponent extends JComponent implements MouseListener, MouseM
     public void mousePressed(MouseEvent e){
         mouseFromX=e.getX();
         mouseFromY=e.getY();
-       if(mouseFromX<xPos&&mouseFromY<mouseFromY){
-              shapeSelected=true;
-       }else{
-              shapeSelected=false;
+        if(mouseFromX<xPos&&mouseFromY<mouseFromY){
+            shapeSelected=true;
+        }else{
+            shapeSelected=false;
         }
-        if(shapeSelected==true){
-        System.out.println("hi");
-    }
+
     }
     public void mouseReleased(MouseEvent e){
     }
@@ -66,6 +73,10 @@ public class CanvasComponent extends JComponent implements MouseListener, MouseM
     public void mouseMoved(MouseEvent e){
     }
     public void mouseDragged(MouseEvent e){
+        mouseToX=e.getX();
+        mouseToY=e.getY();
+        xPos=mouseToX;//-mouseFromX;
+        yPos=mouseToY;//-mouseFromY;
+        repaint();
     }
-    
 }

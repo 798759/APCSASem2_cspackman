@@ -20,8 +20,5 @@ public  void run(){
     CanvasComponent  component= new CanvasComponent(100,100);
     jFrame.add(component);
     jFrame.setVisible(true);
-    
-    
 }
-
 }
