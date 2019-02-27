@@ -94,6 +94,7 @@ public class Card {
     @Override
     public String toString() {
         
-        /* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
+        
+       
     }
 }
