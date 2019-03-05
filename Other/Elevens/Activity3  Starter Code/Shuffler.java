@@ -8,7 +8,6 @@ public class Shuffler {
      * to each sorting procedure.
      */
     private static final int SHUFFLE_COUNT = 1;
-     int[] cards = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20};
 
 
     /**
@@ -48,14 +47,19 @@ public class Shuffler {
      * Apply a "perfect shuffle" to the argument.
      * The perfect shuffle algorithm splits the deck in half, then interleaves
      * the cards in one half with the cards in the other.
-        * @param values is an array of integers simulating cards to be shuffled.
+         * @param values is an array of integers simulating cards to be shuffled.
      */
     public static void perfectShuffle(int[] values) {
-        int[] shuffled = new int[52];
-        int k=0;
-        for(int j=0; j<25; j++){
-            this.cards[j]=shuffled[k];
-            
+        int shuffled[] = new int[4];
+        int k = 0;
+        for (int j = 0; j < 1; j++) {
+            values[j] = shuffled[k];
+            k = k+2;
+        }
+        k = 1;
+        for (int j = 2; j < 4; j++){
+            values[j] = shuffled[k];
+            k = k+2;
         }
     }
 
@@ -71,6 +75,11 @@ public class Shuffler {
      * @param values is an array of integers simulating cards to be shuffled.
      */
     public static void selectionShuffle(int[] values) {
-        /* *** TO BE IMPLEMENTED IN ACTIVITY 3 *** */
+        int shuffled[] = new int[4];
+        for (int k = 0; k < 4; k++){
+            int j=(int)(Math.random()*4);
+            values[j] = shuffled[k];
+            values[j] = 0;
+        }
     }
 }
