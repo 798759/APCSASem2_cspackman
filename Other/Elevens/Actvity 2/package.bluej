@@ -2,9 +2,9 @@
 dependency1.from=Deck
 dependency1.to=Card
 dependency1.type=UsesDependency
-editor.fx.0.height=1010
-editor.fx.0.width=840
-editor.fx.0.x=840
+editor.fx.0.height=0
+editor.fx.0.width=0
+editor.fx.0.x=0
 editor.fx.0.y=0
 objectbench.height=155
 objectbench.width=760
