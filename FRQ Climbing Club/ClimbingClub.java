@@ -20,11 +20,8 @@ public class ClimbingClub
     public void addClimb(String peakName, int climbTime){
         ClimbInfo info= new ClimbInfo(peakName,climbTime);
         climbList.add(info);
-    }
-    public void addClimb1 (String peakName, int climbTime){
-        ClimbInfo info= new ClimbInfo(peakName,climbTime);
         for(int x =0; x>climbList.size(); x++)
-        if(ClimbInfo.getName()/compareTo(peakName)>0){
+        if(info.getName().compareTo(peakName)>0){
         climbList.add(info);}
     }
 }
