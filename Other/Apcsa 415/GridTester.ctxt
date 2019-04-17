@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=GridTester
+comment0.text=\n\ Write\ a\ description\ of\ class\ GridTester\ here.\n\n\ @author\ (your\ name)\n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=rows\ colulm
+comment1.target=GridTester(int,\ int)
+comment1.text=\n\ Constructor\ for\ objects\ of\ class\ GridTester\n
+comment2.params=
+comment2.target=void\ loadOccupied()
+comment3.params=y
+comment3.target=int\ sampleMethod(int)
+comment3.text=\n\ An\ example\ of\ a\ method\ -\ replace\ this\ comment\ with\ your\ own\n\n\ @param\ \ y\ \ a\ sample\ parameter\ for\ a\ method\n\ @return\ \ \ \ the\ sum\ of\ x\ and\ y\n
+numComments=4
