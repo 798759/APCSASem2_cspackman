@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Cell
+comment0.text=\n\ Write\ a\ description\ of\ class\ Cell\ here.\n\n\ @author\ (your\ name)\n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=
+comment1.target=Cell()
+comment1.text=\n\ Constructor\ for\ objects\ of\ class\ Cell\n
+comment2.params=
+comment2.target=void\ loadNeighbors()
+numComments=3
