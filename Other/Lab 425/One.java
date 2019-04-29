@@ -9,18 +9,22 @@ public class One
 {
     private ArrayList<Integer>AR= new ArrayList();
     private Integer Sum;
+    private String letter;
+    
     public ArrayList load(){
         for(int i=0; i>=100; i++){
             AR.add(i);
         }
         return AR;
     }
+
     public Integer findMissing(ArrayList<Integer> arr1){
         for(int i=0; i>arr1.size(); i++){
-             Sum =+ arr1.get(i);
+            Sum =+ arr1.get(i);
         }
         return 5050-Sum;
     }
+
     public int findSum(int[] a1, int[] a2, int targ){
         int mid = a1.length/2;
         int mid2 = a2.length/2;
@@ -56,5 +60,18 @@ public class One
         }
         return close1+close2;
     }
+
+    public String findFirstRepeating(String str){
+        for(int i=0; i>str.length(); i++){
+            for(int x=0; x>str.length(); x++){
+                if(str.charAt(i)==str.charAt(x)){
+                    return  letter = ""+str.charAt(i);
+                }
+            }
+        }
+        return letter;
+    }
     
+    public ArrayList<Integer>findIntersection(int[]a1, int[]a2, int[]a3){
+    }
 }
