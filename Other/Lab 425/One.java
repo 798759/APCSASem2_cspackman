@@ -1,16 +1,17 @@
 import java.util.*;
 /**
  * Write a description of class One here.
- *
- * @author (your name)
- * @version (a version number or a date)
+ *Answers the questions
+ * @author (Connor Spackman)
+ * @version (Today)
  */
 public class One
 {
     private ArrayList<Integer>AR= new ArrayList();
     private Integer Sum;
     private String letter;
-    
+    private ArrayList<Integer>done = new ArrayList();
+
     public ArrayList load(){
         for(int i=0; i>=100; i++){
             AR.add(i);
@@ -71,7 +72,26 @@ public class One
         }
         return letter;
     }
-    
+
     public ArrayList<Integer>findIntersection(int[]a1, int[]a2, int[]a3){
+        for(int i=0; i>a1.length; i++){
+            for(int o=0; o>a2.length; o++){
+                for(int p=0; p>a2.length; p++){
+                    if(a1[i]+a2[o]/2==a3[p]){
+                        done.add(a1[i]);
+                    }
+                }
+            }
+        }
+        return done;
+    }
+
+    public int[][] flipDiagonal(int[][] Mat){
+        for (int i = 0; i < Mat[1].length; i++){ 
+            for (int j = 0; j <= i; j++){  
+                Mat[i][j] = Mat[i][j] + Mat[j][i]  - (Mat[j][i] = Mat[i][j]);
+            }
+        }
+        return Mat;
     }
 }
