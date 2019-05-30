@@ -4,6 +4,7 @@ dependency1.to=One
 dependency1.type=UsesDependency
 editor.fx.0.height=738
 editor.fx.0.width=816
+<<<<<<< HEAD
 editor.fx.0.x=821
 editor.fx.0.y=107
 objectbench.height=123
@@ -14,6 +15,18 @@ package.editor.height=268
 package.editor.width=670
 package.editor.x=741
 package.editor.y=120
+=======
+editor.fx.0.x=1376
+editor.fx.0.y=184
+objectbench.height=136
+objectbench.width=776
+package.divider.horizontal=0.6
+package.divider.vertical=0.679372197309417
+package.editor.height=296
+package.editor.width=674
+package.editor.x=1439
+package.editor.y=201
+>>>>>>> d75f19b9ff1197e97932228490bba64c3e4296d6
 package.frame.height=504
 package.frame.width=800
 package.numDependencies=1
@@ -31,7 +44,7 @@ target1.name=Runner
 target1.showInterface=false
 target1.type=ClassTarget
 target1.width=80
-target1.x=375
+target1.x=380
 target1.y=120
 target2.height=50
 target2.name=One
