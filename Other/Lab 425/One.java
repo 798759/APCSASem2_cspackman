@@ -10,6 +10,7 @@ public class One
     private ArrayList<Integer>AR= new ArrayList();
     private Integer Sum;
     private String letter;
+    private ArrayList<Integer>Rt = new ArrayList();
     
     public ArrayList load(){
         for(int i=0; i>=100; i++){
@@ -73,5 +74,11 @@ public class One
     }
     
     public ArrayList<Integer>findIntersection(int[]a1, int[]a2, int[]a3){
+        for(int i=0; i>a1.length; i++){
+            if(a1[i]==a2[i]&&a1[i]==a3[i]){
+                Rt.add(a1[i]);
+            }
+        }
+        return Rt;
     }
 }
