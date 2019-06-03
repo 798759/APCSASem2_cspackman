@@ -1,9 +1,11 @@
 body {
-	font-family: "Times New Roman";
-  background-image: url(waffle.jpg);
+	font-family: "Palatino";
+background-image: url(waffle.jpg);
 background-repeat:no-repeat;
 background-size: 1300px 1100px;
+background-color: #05ffb0;
 }
 p {
 	color: #dbb013;
+	font-size: 18pt
 }
