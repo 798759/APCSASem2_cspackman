@@ -1,18 +1,35 @@
 <!DOCTYPE html>
 <html>
-
    <head>
      <link rel="stylesheet" type="text/css" href="style.css">
-
    </head>
-
    <body>
-     <embed src="Do You Like Waffles.mp3" width="180" height="70" loop="false" autostart="false" hidden="false" />
-      <h1>Waffle</h1>
-      <p>I like waffles.</p>
+
+     <embed src="Do You Like Waffles.mp3" width="180" height="90" loop="false" autostart="false" hidden="True" />
+
+      <h1>Waffle.com</h1>
+
+      <p>I like waffles. <br>Do you like Waffles? <br>Order waffles here.</p>
+
+
 <iframe width="400" height="200" src="https://www.youtube.com/embed/eDU0CTDMk2g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 <h2>Request Waffles</h2>
-<button type="button" onclick="alert('You have requested a waffle!')">Click Me!</button>
+
+<script type="text/javascript">
+    var clicks = 0;
+    function onClick() {
+        clicks += 1;
+        document.getElementById("clicks").innerHTML = clicks;
+    };
+    </script>
+    <button type="button" onClick="onClick()">ORDER!</button>
+
+
+
+    <p>Waffles orderd: <a id="clicks">0</a></p>
+<p>Hello. Do you want to view <a href="index2.html">page 2</a> ?</p>
+
    </body>
 
 </html>

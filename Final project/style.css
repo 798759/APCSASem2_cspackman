@@ -1,11 +1,14 @@
 body {
-	font-family: "Palatino";
+text-align: center;
+font-family: "Palatino";
 background-image: url(waffle.jpg);
 background-repeat:no-repeat;
 background-size: 1300px 1100px;
 background-color: #05ffb0;
 }
-p {
-	color: #dbb013;
+
+p{
+text-align: left;
+	color: #c49d00;
 	font-size: 18pt
 }
